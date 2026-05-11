@@ -1,0 +1,17 @@
+﻿<h2>Wybierz lokalizację</h2>
+
+<form method="post" asp-action="GetWeather">
+    <label>Kraj:</label>
+    <select name="country">
+        <option value="Poland">Polska</option>
+        <option value="Germany">Niemcy</option>
+    </select>
+
+    <label>Miasto:</label>
+    <select name="city">
+        <option value="Warsaw">Warszawa</option>
+        <option value="Berlin">Berlin</option>
+    </select>
+
+    <button type="submit">Sprawdź pogodę</button>
+</form>
