@@ -9,7 +9,6 @@ obj/
 TestResults/
 artifacts/
 
-Dockerfile*
 docker-compose*
 
 *.db
