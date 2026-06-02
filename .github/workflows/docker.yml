@@ -62,7 +62,7 @@ jobs:
           cache-to: type=registry,ref=fallfinch/weatherapp:buildcache,mode=max
 
       - name: Scan CVE
-        uses: aquasecurity/trivy-action@0.20.0
+        uses: aquasecurity/trivy-action@master
         with:
           image-ref: weatherapp:test
           format: table
@@ -73,6 +73,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: .
+          file: ./Dockerfile
           push: true
 
           platforms: |
