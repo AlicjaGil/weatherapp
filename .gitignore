@@ -9,6 +9,10 @@ obj/
 TestResults/
 artifacts/
 
+<<<<<<< HEAD
+=======
+Dockerfile*
+>>>>>>> 5be44a9 (zad2)
 docker-compose*
 
 *.db
